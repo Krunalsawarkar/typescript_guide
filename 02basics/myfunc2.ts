@@ -14,4 +14,12 @@ heros2.map((hero) => {
   return `Hero is ${hero}`;
 });
 
+function consoleError(errMSg: string): void {
+  console.log(errMSg);
+}
+
+function handleError(errMSg: string): never {
+  throw new Error(errMSg);
+}
+
 export {};
